@@ -1,0 +1,3 @@
+#!/usr/bin/env zsh
+
+DATABASE_URL="mysql://$USER:$DATABASE_PASSWORD@localhost:3306/emptor" sea-orm-cli migrate $@;

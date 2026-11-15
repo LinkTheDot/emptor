@@ -1,0 +1,7 @@
+[workspace]
+members = [
+  "core",
+  "migration",
+  "entities"
+]
+resolver = "3"

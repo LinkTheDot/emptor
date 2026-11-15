@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+
+sea-orm-cli generate entity \
+  --with-serde both \
+  -u mysql://$USER:$DATABASE_PASSWORD@localhost:3306/emptor \
+  -o $PWD/entities/src/;

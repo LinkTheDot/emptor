@@ -1,0 +1,18 @@
+[package]
+name = "core"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+entities = { path = "../entities" }
+sea-orm = { version = "2.0.2", features = ["entity-registry", "schema-sync"] }
+tokio = { version = "1.53.1", features = ["full"] }
+envy = "0.4.2"
+serde = { version = "1.0.229", features = ["derive"] }
+thiserror = "2.0.20"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tracing-appender = "0.2.5"
+crossterm = "0.29.0"
+terminal_display = { path = "../terminal_display" }
+anyhow = "1.0.104"
